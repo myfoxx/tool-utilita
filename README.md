@@ -46,9 +46,6 @@ Per leggere gli indirizzi IP da un file e generare una lista:
 ```bash
 ./genera_ip.py -f ips.txt -c 5 -o elenco_ip.txt
 ```
-
-Certamente! Ecco un esempio di `README.md` per lo script che hai sviluppato. Questo file fornisce istruzioni su come funziona lo script, come installarlo e quali sono i prerequisiti necessari.
-
 ---
 
 # Password Pwned Checker
