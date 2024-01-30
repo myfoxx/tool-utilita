@@ -47,3 +47,65 @@ Per leggere gli indirizzi IP da un file e generare una lista:
 ./genera_ip.py -f ips.txt -c 5 -o elenco_ip.txt
 ```
 
+Certamente! Ecco un esempio di `README.md` per lo script che hai sviluppato. Questo file fornisce istruzioni su come funziona lo script, come installarlo e quali sono i prerequisiti necessari.
+
+---
+
+# Password Pwned Checker
+
+Questo script Python controlla se le tue password sono state compromesse utilizzando il servizio API di "Have I Been Pwned".
+
+## Prerequisiti
+
+Per eseguire questo script, avrai bisogno di:
+
+- Python 3 (testato con Python 3.12)
+- Modulo `requests` di Python
+
+## Installazione
+
+Prima di utilizzare lo script, devi installare il modulo `requests`. Puoi farlo eseguendo:
+
+```bash
+pip install requests
+```
+
+## Configurazione
+
+Dovrai inserire la tua chiave API di "Have I Been Pwned" direttamente nello script. Trova la riga:
+
+```python
+API_KEY = 'YOUR_HIBP_API_KEY'
+```
+
+e sostituisci `'YOUR_HIBP_API_KEY'` con la tua chiave API personale.
+
+## Uso
+
+Lo script può essere eseguito in vari modi:
+
+1. Per controllare una singola password:
+   ```bash
+   python3 password_check.py -p "tua_password"
+   ```
+2. Per controllare una lista di password da un file:
+   ```bash
+   python3 password_check.py -f path_to_your_file.txt
+   ```
+3. Per salvare i risultati in un file:
+   ```bash
+   python3 password_check.py -f path_to_your_file.txt -o output_file.txt
+   ```
+
+### Parametri
+
+- `-p` o `--password`: Permette di specificare una singola password per il controllo.
+- `-f` o `--file`: Percorso del file contenente un elenco di password per il controllo.
+- `-o` o `--output`: Percorso del file di output dove salvare le password compromesse.
+
+## Note
+
+- È importante non utilizzare questo script con password sensibili o in ambienti non sicuri.
+- Questo script è fornito per scopi educativi e va utilizzato con responsabilità.
+
+
